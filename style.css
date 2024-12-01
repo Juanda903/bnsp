@@ -1,0 +1,235 @@
+/* Resetting basic styles for consistent layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Container style for centering content */
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Header (Home Page) */
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align: center;
+    color: #666;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #0056b3;
+}
+
+/* Produk Kamar */
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.product {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.product h3 {
+    margin-top: 15px;
+    font-size: 22px;
+    color: #333;
+}
+
+.product p {
+    font-size: 16px;
+    color: #777;
+    margin-top: 5px;
+}
+
+/* Form Pemesanan Kamar */
+form label {
+    font-size: 16px;
+    margin-top: 10px;
+    display: block;
+}
+
+form input,
+form select,
+form button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #0056b3;
+}
+
+form input[type="checkbox"] {
+    width: auto;
+    margin-right: 10px;
+}
+
+button[type="button"] {
+    background-color: #ff7f50;
+    margin-right: 10px;
+}
+
+button[type="button"]:hover {
+    background-color: #e64a19;
+}
+
+#pesan_button {
+    display: none;
+}
+
+/* Cancel Button */
+#cancel_button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#cancel_button:hover {
+    background-color: #d9534f;
+}
+
+/* Tentang Kami Page */
+h3 {
+    font-size: 22px;
+    margin-top: 20px;
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 16px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+ul li strong {
+    font-weight: bold;
+}
+
+ul li a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Footer and general layout */
+footer {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    h1, h2, h3 {
+        font-size: 24px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product img {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .product h3 {
+        font-size: 20px;
+    }
+
+    .product p {
+        font-size: 14px;
+    }
+
+    form input, form select, form button {
+        width: 100%;
+    }
+}
